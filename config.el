@@ -76,8 +76,8 @@
 
 ;; COMPANY
 (after! company
-  (setq company-idle-delay 0.3
-        company-minimum-prefix-length 2))
+  (setq company-idle-delay 2
+        company-minimum-prefix-length 3))
 (setq-default history-length 1000)
 (setq-default prescient-history-length 1000)
 
