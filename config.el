@@ -82,14 +82,14 @@
 (setq-default prescient-history-length 1000)
 
 ;; RUST
-(after! rustic
-  (setq rustic-lsp-server 'rust-analyzer))
+;; (after! rustic
+  ;; (setq rustic-lsp-server 'rust-analyzer))
 
 ;; ACE-WINDOW
-(custom-set-faces!
-  '(aw-leading-char-face
-    :foreground "white" :background "red"
-    :weight bold :height 2.5 :box (:line-width 10 :color "red")))
+;; (custom-set-faces!
+  ;; '(aw-leading-char-face
+    ;; :foreground "white" :background "red"
+    ;; :weight bold :height 2.5 :box (:line-width 10 :color "red")))
 
 ;; CUSTOM KEY BINDINGS
 (map! "s-b" #'+lookup/documentation)
