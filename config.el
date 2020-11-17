@@ -57,12 +57,17 @@
 
 ;; WINDOW
 (add-hook 'window-setup-hook #'toggle-frame-maximized)
+;; ace-window config.
+(custom-set-faces!
+  '(aw-leading-char-face
+    :foreground "white" :background "red"
+    :weight bold :height 2.5 :box (:line-width 10 :color "red")))
 
 ;; BUFFER
 (add-hook! 'after-save-hook #'evil-normal-state)
 
 ;; FONT-FACE
-;; download fonts from https://www.jetbrains.com/lp/mono/
+;; Download fonts from https://www.jetbrains.com/lp/mono/
 ;; NOTE: emacs wil crash if fonts not in path.
 (setq doom-font (font-spec :family "JetBrains Mono" :size 14)
       doom-big-font (font-spec :family "JetBrains Mono" :size 24))
@@ -76,20 +81,14 @@
 
 ;; COMPANY
 (after! company
-  (setq company-idle-delay 2
-        company-minimum-prefix-length 3))
+  (setq company-idle-delay 0.3
+        company-minimum-prefix-length 2))
 (setq-default history-length 1000)
 (setq-default prescient-history-length 1000)
 
-;; RUST
-;; (after! rustic
-  ;; (setq rustic-lsp-server 'rust-analyzer))
-
-;; ACE-WINDOW
-;; (custom-set-faces!
-  ;; '(aw-leading-char-face
-    ;; :foreground "white" :background "red"
-    ;; :weight bold :height 2.5 :box (:line-width 10 :color "red")))
+;; LSP
+;; https://emacs-lsp.github.io/lsp-mode/page/settings/
+(setq lsp-signature-render-documentation nil)
 
 ;; CUSTOM KEY BINDINGS
 (map! "s-b" #'+lookup/documentation)
