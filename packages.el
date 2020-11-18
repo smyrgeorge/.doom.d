@@ -52,9 +52,10 @@
 ;; CUSTOM PACKAGES ;;
 
 ;; Emacs plugin for livedown (live preview .md files in browser).
+;; This is an alternative for grip mode (in case API limit is reached).
 ;; https://github.com/shime/emacs-livedown
-;; Emacs may crash if livedown is not present.
 ;; npm install -g livedown
+;; NOTE: Emacs may crash if livedown is not present.
 (package! emacs-livedown
  :recipe (:host github :repo "shime/emacs-livedown"
           :files ("livedown.el")))

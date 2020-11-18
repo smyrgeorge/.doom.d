@@ -68,6 +68,7 @@
 
 ;; FONT-FACE
 ;; Download fonts from https://www.jetbrains.com/lp/mono/
+;; For mac users copy font to 'ls ~/Library/Fonts'.
 ;; NOTE: emacs wil crash if fonts not in path.
 (setq doom-font (font-spec :family "JetBrains Mono" :size 14)
       doom-big-font (font-spec :family "JetBrains Mono" :size 24))
@@ -83,8 +84,6 @@
 (after! company
   (setq company-idle-delay 0.3
         company-minimum-prefix-length 2))
-(setq-default history-length 1000)
-(setq-default prescient-history-length 1000)
 
 ;; LSP
 ;; https://emacs-lsp.github.io/lsp-mode/page/settings/
