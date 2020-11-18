@@ -48,3 +48,13 @@
 ;(unpin! pinned-package another-pinned-package)
 ;; ...Or *all* packages (NOT RECOMMENDED; will likely break things)
 ;(unpin! t)
+
+;; CUSTOM PACKAGES ;;
+
+;; Emacs plugin for livedown (live preview .md files in browser).
+;; https://github.com/shime/emacs-livedown
+;; Emacs may crash if livedown is not present.
+;; npm install -g livedown
+(package! emacs-livedown
+ :recipe (:host github :repo "shime/emacs-livedown"
+          :files ("livedown.el")))
