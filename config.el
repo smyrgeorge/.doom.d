@@ -70,8 +70,8 @@
 ;; Download fonts from https://www.jetbrains.com/lp/mono/
 ;; For mac users copy font to 'ls ~/Library/Fonts'.
 ;; NOTE: emacs wil crash if fonts not in path.
-(setq doom-font (font-spec :family "JetBrains Mono" :size 14)
-      doom-big-font (font-spec :family "JetBrains Mono" :size 24))
+(setq doom-font (font-spec :family "JetBrains Mono" :size 15)
+      doom-big-font (font-spec :family "JetBrains Mono" :size 20))
 
 ;; PROJECTILE
 ;; NOTE: discover projects using 'projectile-discover-projects-in-search-path'
@@ -87,8 +87,12 @@
 
 ;; LSP
 ;; https://emacs-lsp.github.io/lsp-mode/page/settings/
-(setq lsp-signature-render-documentation nil)
+;; (setq lsp-signature-render-documentation nil)
 
 ;; CUSTOM KEY BINDINGS
 (map! "s-b" #'+lookup/documentation)
 (map! "C-§" #'ace-window)
+(map! "M-[" #'previous-buffer)
+(map! "M-]" #'next-buffer)
+(map! "s-[" #'better-jumper-jump-backward)
+(map! "s-]" #'better-jumper-jump-forward)
