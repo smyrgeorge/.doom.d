@@ -54,6 +54,7 @@
 ;; they are implemented.
 
 ;; CUSTOM CONFIG ;;
+(setq! default-directory "~")
 
 ;; WINDOW
 (add-hook 'window-setup-hook #'toggle-frame-maximized)
@@ -78,6 +79,7 @@
 (setq projectile-project-search-path '("~/dev/projects/bevica"
                                        "~/dev/projects/personal"
                                        "~/dev/projects/personal/medium"
+                                       "~/dev/projects/org"
                                        "~/dev/projects/rust"))
 
 ;; COMPANY
@@ -88,6 +90,10 @@
 ;; LSP
 ;; https://emacs-lsp.github.io/lsp-mode/page/settings/
 ;; (setq lsp-signature-render-documentation nil)
+
+;; NEOTREE
+;; (setq! neo-autorefresh t)
+;; (setq! neo-smart-open t)
 
 ;; CUSTOM KEY BINDINGS
 (map! "s-b" #'+lookup/documentation)
