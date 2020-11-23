@@ -59,3 +59,9 @@
 (package! emacs-livedown
  :recipe (:host github :repo "shime/emacs-livedown"
           :files ("livedown.el")))
+
+;; org plugin to export to jupiter.
+;; https://github.com/jkitchin/ox-ipynb
+;; (package! ox-ipynb
+;;  :recipe (:host github :repo "jkitchin/ox-ipynb"
+;;           :files ("ox-ipynb.el")))

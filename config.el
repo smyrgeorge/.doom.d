@@ -93,6 +93,8 @@
 ;; #+HTML_HEAD: <link rel="stylesheet" type="text/css" href="https://gongzhitaao.org/orgcss/org.css"/>
 (setq org-html-head-include-default-style nil
       org-html-htmlize-output-type 'css)
+;; (require 'ox-ipynb)
+
 
 ;; LSP
 ;; https://emacs-lsp.github.io/lsp-mode/page/settings/
