@@ -53,7 +53,7 @@
 ;; they are implemented.
 
 ;; CUSTOM CONFIG ;;
-(setq! default-directory "~")
+(setq default-directory "~")
 
 ;; WINDOW
 (add-hook 'window-setup-hook #'toggle-frame-maximized)
@@ -86,13 +86,17 @@
   (setq company-idle-delay 0.3
         company-minimum-prefix-length 2))
 
+;; ORG
+;; Custom css in org export html.
+;; https://github.com/gongzhitaao/orgcss
+;; Add the following to header section.
+;; #+HTML_HEAD: <link rel="stylesheet" type="text/css" href="https://gongzhitaao.org/orgcss/org.css"/>
+(setq org-html-head-include-default-style nil
+      org-html-htmlize-output-type 'css)
+
 ;; LSP
 ;; https://emacs-lsp.github.io/lsp-mode/page/settings/
 ;; (setq lsp-signature-render-documentation nil)
-
-;; NEOTREE
-;; (setq! neo-autorefresh t)
-;; (setq! neo-smart-open t)
 
 ;; CUSTOM KEY BINDINGS
 (map! "s-b" #'+lookup/documentation)
