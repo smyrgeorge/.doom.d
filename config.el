@@ -39,7 +39,7 @@
 ;;
 ;; - `load!' for loading external *.el files relative to this one
 ;; - `use-package!' for configuring packages
-;; - `after!' for running code after a package has loaded
+;; - `after!' for running code after a ppackage has loaded
 ;; - `add-load-path!' for adding directories to the `load-path', relative to
 ;;   this file. Emacs searches the `load-path' when you load packages with
 ;;   `require' or `use-package'.
@@ -83,7 +83,7 @@
 
 ;; COMPANY
 (after! company
-  (setq company-idle-delay 0.3
+  (setq company-idle-delay 0.5
         company-minimum-prefix-length 2))
 
 ;; ORG
@@ -95,10 +95,9 @@
       org-html-htmlize-output-type 'css)
 ;; (require 'ox-ipynb)
 
-
 ;; LSP
 ;; https://emacs-lsp.github.io/lsp-mode/page/settings/
-;; (setq lsp-signature-render-documentation nil)
+(setq lsp-signature-render-documentation nil)
 
 ;; CUSTOM KEY BINDINGS
 (map! "s-b" #'+lookup/documentation)
