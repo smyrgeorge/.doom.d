@@ -108,3 +108,7 @@
 (map! "M-]" #'next-buffer)
 (map! "s-[" #'better-jumper-jump-backward)
 (map! "s-]" #'better-jumper-jump-forward)
+
+;; RSS
+(setq elfeed-feeds
+      '("https://this-week-in-rust.org/rss.xml"))
