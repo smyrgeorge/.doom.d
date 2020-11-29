@@ -70,9 +70,9 @@
        word-wrap         ; soft wrapping with language-aware indent
 
        :emacs
-       dired             ; making dired pretty [functional]
-       ;;electric          ; smarter, keyword-based electric-indent
-       ibuffer         ; interactive buffer management
+       (dired +ranger)   ; making dired pretty [functional]
+       electric          ; smarter, keyword-based electric-indent
+       ibuffer           ; interactive buffer management
        undo              ; persistent, smarter undo for your inevitable mistakes
        vc                ; version-control and Emacs, sitting in a tree
 
@@ -89,7 +89,7 @@
 
        :tools
        ;;ansible
-       (debugger +lsp)     ; A (nigh-)universal debugger in Emacs
+       (debugger +lsp)   ; A (nigh-)universal debugger in Emacs
        ;;direnv
        docker
        editorconfig      ; let someone else argue about tabs vs spaces
@@ -97,7 +97,7 @@
        (eval +overlay)     ; run code, run (also, repls)
        ;;gist              ; interacting with github gists
        lookup              ; navigate your code and its documentation
-       lsp
+       (lsp +peek)
        magit             ; a git porcelain for Emacs
        ;;make              ; run make tasks from Emacs
        ;;pass              ; password manager for nerds
@@ -137,7 +137,7 @@
        ;;hy                ; readability of scheme w/ speed of python
        ;;idris             ; a language you can depend on
        json              ; At least it ain't XML
-       (java +lsp) ; the poster child for carpal tunnel syndrome
+       (java +lsp)       ; the poster child for carpal tunnel syndrome
        javascript        ; all(hope(abandon(ye(who(enter(here))))))
        ;;julia             ; a better, faster MATLAB
        ;;(kotlin +lsp)     ; a better, slicker Java(Script)

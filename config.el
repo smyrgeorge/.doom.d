@@ -95,6 +95,7 @@
 ;; #+HTML_HEAD: <link rel="stylesheet" type="text/css" href="https://gongzhitaao.org/orgcss/org.css"/>
 (setq org-html-head-include-default-style nil
       org-html-htmlize-output-type 'css)
+;; Export to jupiter book.
 ;; (require 'ox-ipynb)
 
 ;; LSP
