@@ -113,3 +113,10 @@
 ;; RSS
 (setq elfeed-feeds
       '("https://this-week-in-rust.org/rss.xml"))
+
+;; RAINBOW-MODE
+;; hl-line-mode overrides the color highlighting of rainbow-mode,
+;; limiting the use of that plugin and on-site color changes using kurecolor.
+;; To automatically disable it only when rainbow-mode is active, you can add the following hook:
+(add-hook! 'rainbow-mode-hook
+  (hl-line-mode (if rainbow-mode -1 +1)))
