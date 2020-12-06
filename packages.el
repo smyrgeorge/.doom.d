@@ -60,6 +60,25 @@
  :recipe (:host github :repo "shime/emacs-livedown"
           :files ("livedown.el")))
 
+;; Emacs plugin for delta (ultimate diff tool).
+;; https://github.com/dandavison/magit-delta
+;; brew install git-delta
+(package! magit-delta
+ :recipe (:host github :repo "dandavison/magit-delta"
+          :files ("magit-delta.el")))
+
+;; Emacs plugin for magit-todos (TD./FXM./etc).
+;; https://github.com/alphapapa/magit-todos
+(package! magit-todos
+ :recipe (:host github :repo "alphapapa/magit-todos"
+          :files ("magit-todos.el")))
+
+;; Emacs plugin symon (tiny graphical system monitor).
+;; https://github.com/zk-phi/symon
+(package! symon
+ :recipe (:host github :repo "zk-phi/symon"
+          :files ("symon.el")))
+
 ;; org plugin to export to jupiter.
 ;; https://github.com/jkitchin/ox-ipynb
 ;; (package! ox-ipynb

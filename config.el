@@ -55,6 +55,14 @@
 ;; CUSTOM CONFIG ;;
 (setq default-directory "~")
 
+;; CUSTOM KEY BINDINGS
+(map! "s-b" #'+lookup/documentation)
+(map! "C-§" #'ace-window)
+(map! "M-[" #'previous-buffer)
+(map! "M-]" #'next-buffer)
+(map! "s-[" #'better-jumper-jump-backward)
+(map! "s-]" #'better-jumper-jump-forward)
+
 ;; WINDOW
 (add-hook 'window-setup-hook #'toggle-frame-maximized)
 ;; ace-window config.
@@ -102,13 +110,11 @@
 ;; https://emacs-lsp.github.io/lsp-mode/page/settings/
 (setq lsp-signature-render-documentation nil)
 
-;; CUSTOM KEY BINDINGS
-(map! "s-b" #'+lookup/documentation)
-(map! "C-§" #'ace-window)
-(map! "M-[" #'previous-buffer)
-(map! "M-]" #'next-buffer)
-(map! "s-[" #'better-jumper-jump-backward)
-(map! "s-]" #'better-jumper-jump-forward)
+;; MAGIT
+;; Enable delta diff by default.
+;; NOTE: if delta is not install, emacs may brake (or magit).
+(add-hook 'magit-mode-hook (lambda () (magit-delta-mode +1)))
+(add-hook 'magit-mode-hook (lambda () (magit-todos-mode +1)))
 
 ;; RSS
 (setq elfeed-feeds
@@ -120,3 +126,9 @@
 ;; To automatically disable it only when rainbow-mode is active, you can add the following hook:
 (add-hook! 'rainbow-mode-hook
   (hl-line-mode (if rainbow-mode -1 +1)))
+
+;; SYMON
+;; Enale symon by default.
+;; (add-hook 'window-setup-hook (lambda () (symon-mode +1)))
+(setq symon-refresh-rate 5)
+(setq symon-sparkline-type 'plain)
