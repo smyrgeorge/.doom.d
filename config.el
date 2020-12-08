@@ -93,8 +93,9 @@
 
 ;; COMPANY
 (after! company
-  (setq company-idle-delay 0.5
-        company-minimum-prefix-length 2))
+  (setq company-idle-delay 0.8
+        company-minimum-prefix-length 3
+        company-tooltip-maximum-width 500))
 
 ;; ORG
 ;; Custom css in org export html.
@@ -108,7 +109,8 @@
 
 ;; LSP
 ;; https://emacs-lsp.github.io/lsp-mode/page/settings/
-(setq lsp-signature-render-documentation nil)
+;; (setq lsp-signature-render-documentation nil)
+;; (setq lsp-headerline-breadcrumb-enable t)
 
 ;; MAGIT
 ;; Enable delta diff by default.
