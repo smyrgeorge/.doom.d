@@ -109,14 +109,13 @@
 
 ;; LSP
 ;; https://emacs-lsp.github.io/lsp-mode/page/settings/
-;; (setq lsp-signature-render-documentation nil)
+(setq lsp-signature-render-documentation nil)
 ;; (setq lsp-headerline-breadcrumb-enable t)
 
 ;; MAGIT
 ;; Enable delta diff by default.
 ;; NOTE: if delta is not install, emacs may brake (or magit).
 (add-hook 'magit-mode-hook (lambda () (magit-delta-mode +1)))
-(add-hook 'magit-mode-hook (lambda () (magit-todos-mode +1)))
 
 ;; RSS
 (setq elfeed-feeds

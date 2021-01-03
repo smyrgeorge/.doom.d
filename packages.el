@@ -67,12 +67,6 @@
  :recipe (:host github :repo "dandavison/magit-delta"
           :files ("magit-delta.el")))
 
-;; Emacs plugin for magit-todos (TD./FXM./etc).
-;; https://github.com/alphapapa/magit-todos
-(package! magit-todos
- :recipe (:host github :repo "alphapapa/magit-todos"
-          :files ("magit-todos.el")))
-
 ;; Emacs plugin symon (tiny graphical system monitor).
 ;; https://github.com/zk-phi/symon
 (package! symon
