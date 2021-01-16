@@ -133,3 +133,7 @@
 ;; (add-hook 'window-setup-hook (lambda () (symon-mode +1)))
 (setq symon-refresh-rate 5)
 (setq symon-sparkline-type 'plain)
+
+;; PYTHON
+;; Set the anaconda home directory.
+(setq conda-anaconda-home "/usr/local/anaconda3/")
