@@ -27,6 +27,7 @@
        (ivy
         ;;+fuzzy
         ;;+icons
+        ;;+childframe
         +prescient)        ; a search engine for love and life
 
        :ui
@@ -93,9 +94,9 @@
        ;;ansible
        (debugger +lsp)   ; A (nigh-)universal debugger in Emacs
        ;;direnv
-       docker
+       (docker +lsp)
        editorconfig      ; let someone else argue about tabs vs spaces
-       ;;ein               ; tame Jupyter notebooks with emacs
+       ein               ; tame Jupyter notebooks with emacs
        (eval +overlay)     ; run code, run (also, repls)
        ;;gist              ; interacting with github gists
        lookup              ; navigate your code and its documentation
