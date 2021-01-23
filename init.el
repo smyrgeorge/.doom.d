@@ -156,6 +156,7 @@
        (org
         ;;+pandoc
         ;;+present
+        +jupyter
         +hugo
         +dragndrop
         +pretty
@@ -166,6 +167,7 @@
        (python
         ;;+pyenv
         +conda
+        +pyright
         +lsp)            ; beautiful is better than ugly
        ;;qt                ; the 'cutest' gui framework ever
        ;;racket            ; a DSL for DSLs
