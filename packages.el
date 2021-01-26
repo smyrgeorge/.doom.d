@@ -78,7 +78,3 @@
 ;; (package! ox-ipynb
 ;;  :recipe (:host github :repo "jkitchin/ox-ipynb"
 ;;           :files ("ox-ipynb.el")))
-
-
-;; Emacs touch typing tutor.
-(package! speed-type)

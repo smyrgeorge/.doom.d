@@ -57,7 +57,6 @@
 
 ;; CUSTOM KEY BINDINGS
 (map! "s-b" #'+lookup/documentation)
-(map! "C-§" #'ace-window)
 (map! "M-[" #'previous-buffer)
 (map! "M-]" #'next-buffer)
 (map! "s-[" #'better-jumper-jump-backward)
@@ -82,7 +81,7 @@
       doom-big-font (font-spec :family "JetBrains Mono" :size 20))
 
 ;; PROJECTILE
-;; NOTE: discover projects using 'projectile-discover-projects-in-search-path'
+;; Discover projects using 'projectile-discover-projects-in-search-path'
 (setq projectile-project-search-path '("~/dev/projects/bevica"
                                        "~/dev/projects/personal"
                                        "~/dev/projects/personal/medium"
@@ -95,7 +94,8 @@
 (after! company
   (setq company-idle-delay 0.8
         company-minimum-prefix-length 3
-        company-tooltip-maximum-width 500))
+        company-tooltip-maximum-width 500)
+  (add-hook! 'evil-normal-state-entry-hook #'company-abort))
 
 ;; ORG
 ;; Custom css in org export html.
@@ -109,7 +109,7 @@
 
 ;; LSP
 ;; https://emacs-lsp.github.io/lsp-mode/page/settings/
-(setq lsp-signature-render-documentation nil)
+;; (setq lsp-signature-render-documentation nil)
 ;; (setq lsp-headerline-breadcrumb-enable t)
 
 ;; MAGIT
