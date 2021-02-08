@@ -194,6 +194,7 @@
 
        :app
        ;;calendar
+       everywhere        ; *leave* Emacs!? You must be joking
        ;;irc               ; how neckbeards socialize
        rss               ; emacs as an RSS reader
        ;;twitter           ; twitter client https://twitter.com/vnought
