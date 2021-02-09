@@ -23,3 +23,8 @@ brew upgrade rust-analyzer
 echo -e "\nInstalling kotlin:"
 brew install ktlint
 brew upgrade ktlint
+
+# c
+echo -e "\nInstalling c:"
+brew install glslang
+brew upgrade glslang
