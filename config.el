@@ -131,8 +131,8 @@
 ;; SYMON
 ;; Enale symon by default.
 ;; (add-hook 'window-setup-hook (lambda () (symon-mode +1)))
-(setq symon-refresh-rate 5)
-(setq symon-sparkline-type 'plain)
+;; (setq symon-refresh-rate 5)
+;; (setq symon-sparkline-type 'plain)
 
 ;; PYTHON
 ;; Set the anaconda home directory.

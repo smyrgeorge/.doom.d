@@ -69,9 +69,9 @@
 
 ;; Emacs plugin symon (tiny graphical system monitor).
 ;; https://github.com/zk-phi/symon
-(package! symon
- :recipe (:host github :repo "zk-phi/symon"
-          :files ("symon.el")))
+;; (package! symon
+ ;; :recipe (:host github :repo "zk-phi/symon"
+          ;; :files ("symon.el")))
 
 ;; org plugin to export to jupiter.
 ;; https://github.com/jkitchin/ox-ipynb
