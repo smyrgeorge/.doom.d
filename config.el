@@ -92,8 +92,8 @@
 
 ;; COMPANY
 (after! company
-  (setq company-idle-delay 0.8
-        company-minimum-prefix-length 3
+  (setq company-idle-delay 0.1
+        company-minimum-prefix-length 2
         company-tooltip-maximum-width 500)
   (add-hook! 'evil-normal-state-entry-hook #'company-abort))
 
