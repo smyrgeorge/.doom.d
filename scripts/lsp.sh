@@ -25,3 +25,7 @@ brew install ktlint
 # c
 echo -e "\nInstalling c:"
 brew install glslang
+
+# latex
+echo -e "\nInstalling latex:"
+brew install texlab
