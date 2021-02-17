@@ -112,6 +112,10 @@
 ;; (setq lsp-signature-render-documentation nil)
 ;; (setq lsp-headerline-breadcrumb-enable t)
 
+;; FORMAT
+;; Disable re-format with lsp. Use doom's format module (see config.el).
+(setq +format-with-lsp nil)
+
 ;; MAGIT
 ;; Enable delta diff by default.
 ;; NOTE: if delta is not install, emacs may brake (or magit).

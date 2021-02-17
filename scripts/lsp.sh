@@ -17,14 +17,11 @@ npm i -g dockerfile-language-server-nodejs
 # rust
 echo -e "\nInstalling rust:"
 brew install rust-analyzer
-brew upgrade rust-analyzer
 
 # kotlin
 echo -e "\nInstalling kotlin:"
 brew install ktlint
-brew upgrade ktlint
 
 # c
 echo -e "\nInstalling c:"
 brew install glslang
-brew upgrade glslang
