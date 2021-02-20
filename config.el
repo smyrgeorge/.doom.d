@@ -83,9 +83,6 @@
 ;; PROJECTILE
 ;; Discover projects using 'projectile-discover-projects-in-search-path'
 (setq projectile-project-search-path '("~/dev/projects/bevica"
-                                       "~/dev/projects/personal"
-                                       "~/dev/projects/personal/medium"
-                                       "~/dev/projects/org"
                                        "~/dev/projects/rust"))
 ;; Disable projectile auto add projects.
 (setq projectile-track-known-projects-automatically nil)
