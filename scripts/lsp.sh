@@ -20,6 +20,8 @@ brew install rust-analyzer
 
 # kotlin
 echo -e "\nInstalling kotlin:"
+# NOTE: also you need to install kotlin-language-server manually (also add to PATH).
+# https://github.com/fwcd/kotlin-language-server
 brew install ktlint
 
 # c

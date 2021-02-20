@@ -64,17 +64,5 @@
 ;; https://github.com/dandavison/magit-delta
 ;; brew install git-delta
 (package! magit-delta
- :recipe (:host github :repo "dandavison/magit-delta"
-          :files ("magit-delta.el")))
-
-;; Emacs plugin symon (tiny graphical system monitor).
-;; https://github.com/zk-phi/symon
-;; (package! symon
- ;; :recipe (:host github :repo "zk-phi/symon"
-          ;; :files ("symon.el")))
-
-;; org plugin to export to jupiter.
-;; https://github.com/jkitchin/ox-ipynb
-;; (package! ox-ipynb
-;;  :recipe (:host github :repo "jkitchin/ox-ipynb"
-;;           :files ("ox-ipynb.el")))
+  :recipe (:host github :repo "dandavison/magit-delta"
+           :files ("magit-delta.el")))

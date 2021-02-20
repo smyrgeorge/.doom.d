@@ -97,21 +97,6 @@
         company-tooltip-maximum-width 500)
   (add-hook! 'evil-normal-state-entry-hook #'company-abort))
 
-;; ORG
-;; Custom css in org export html.
-;; https://github.com/gongzhitaao/orgcss
-;; Add the following to header section.
-;; #+HTML_HEAD: <link rel="stylesheet" type="text/css" href="https://gongzhitaao.org/orgcss/org.css"/>
-(setq org-html-head-include-default-style nil
-      org-html-htmlize-output-type 'css)
-;; Export to jupiter book.
-;; (require 'ox-ipynb)
-
-;; LSP
-;; https://emacs-lsp.github.io/lsp-mode/page/settings/
-;; (setq lsp-signature-render-documentation nil)
-;; (setq lsp-headerline-breadcrumb-enable t)
-
 ;; FORMAT
 ;; Disable re-format with lsp. Use doom's format module (see config.el).
 (setq +format-with-lsp nil)
@@ -131,12 +116,6 @@
 ;; To automatically disable it only when rainbow-mode is active, you can add the following hook:
 (add-hook! 'rainbow-mode-hook
   (hl-line-mode (if rainbow-mode -1 +1)))
-
-;; SYMON
-;; Enale symon by default.
-;; (add-hook 'window-setup-hook (lambda () (symon-mode +1)))
-;; (setq symon-refresh-rate 5)
-;; (setq symon-sparkline-type 'plain)
 
 ;; PYTHON
 ;; Set the anaconda home directory.
