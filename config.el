@@ -94,6 +94,9 @@
         company-tooltip-maximum-width 500)
   (add-hook! 'evil-normal-state-entry-hook #'company-abort))
 
+;; LSP
+(setq lsp-signature-render-documentation nil)
+
 ;; FORMAT
 ;; Disable re-format with lsp. Use doom's format module (see config.el).
 (setq +format-with-lsp nil)

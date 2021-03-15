@@ -31,3 +31,7 @@ brew install glslang
 # latex
 echo -e "\nInstalling latex:"
 brew install texlab
+
+# godot
+echo -e "\nInstalling godot:"
+pip install gdtoolkit
