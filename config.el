@@ -98,8 +98,8 @@
 (setq lsp-signature-render-documentation nil)
 
 ;; FORMAT
-;; Disable re-format with lsp. Use doom's format module (see config.el).
-(setq +format-with-lsp nil)
+;; Disable re-format with lsp. Use doom's format module (see init.el).
+;; (setq +format-with-lsp nil)
 
 ;; MAGIT
 ;; Enable delta diff by default.
