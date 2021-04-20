@@ -21,7 +21,6 @@
 
        :completion
        company             ; the ultimate code completion backend
-
        ;;helm              ; the *other* search engine for love and life
        ;;ido               ; the other *other* search engine...
        (ivy
@@ -119,6 +118,7 @@
 
        :lang
        ;;agda              ; types of types of types of types...
+       ;;beancount         ; the accounting system in Emacs
        (cc +lsp)           ; C/C++/Obj-C madness
        ;;clojure           ; java with a lisp
        common-lisp       ; if you've seen one lisp, you've seen them all
@@ -179,7 +179,7 @@
        ;;(ruby +rails)     ; 1.step {|i| p "Ruby is #{i.even? ? 'love' : 'life'}"}
        (rust +lsp)         ; Fe2O3.unwrap().unwrap().unwrap().unwrap()
        ;;scala             ; java, but good
-       ;;scheme            ; a fully conniving family of lisps
+       ;;(scheme +guile)   ; a fully conniving family of lisps
        (sh +lsp)         ; she sells {ba,z,fi}sh shells on the C xor
        ;;sml
        ;;solidity          ; do you need a blockchain? No.
@@ -187,6 +187,7 @@
        ;;terra             ; Earth and Moon in alignment for performance.
        web               ; the tubes
        yaml              ; JSON, but readable
+       ;;zig               ; C, but simpler
 
        :email
        ;;(mu4e +gmail)
@@ -195,7 +196,8 @@
 
        :app
        ;;calendar
-       everywhere        ; *leave* Emacs!? You must be joking
+       ;;emms
+       ;;everywhere        ; *leave* Emacs!? You must be joking
        ;;irc               ; how neckbeards socialize
        rss               ; emacs as an RSS reader
        ;;twitter           ; twitter client https://twitter.com/vnought
