@@ -8,7 +8,7 @@ brew install tex-live-utility
 
 # other tools
 echo -e "\nInstalling other tools:"
-brew install aspell bat curl editorconfig exa git-delta hugo jq
+brew install aspell bat curl editorconfig exa git-delta jq
 brew install inetutils git vim qemu ripgrep wget k9s lens
 
 # amethys (tilling window manager)
