@@ -23,11 +23,7 @@
        company             ; the ultimate code completion backend
        ;;helm              ; the *other* search engine for love and life
        ;;ido               ; the other *other* search engine...
-       ;;(ivy
-        ;;+fuzzy
-        ;;+icons
-        ;;+childframe
-        ;;+prescient)        ; a search engine for love and life
+       ;;ivy               ; a search engine for love and life
        (vertico +icons)  ; the search engine of the future
 
        :ui
@@ -195,7 +191,7 @@
        ;;zig               ; C, but simpler
 
        :email
-       ;;(mu4e +gmail)
+       ;;(mu4e +org +gmail)
        ;;notmuch
        ;;(wanderlust +gmail)
 
