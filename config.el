@@ -64,11 +64,6 @@
 
 ;; WINDOW
 (add-hook 'window-setup-hook #'toggle-frame-maximized)
-;; ace-window config.
-(custom-set-faces!
-  '(aw-leading-char-face
-    :foreground "white" :background "red"
-    :weight bold :height 2.5 :box (:line-width 10 :color "red")))
 
 ;; BUFFER
 (add-hook! 'after-save-hook #'evil-normal-state)
@@ -77,7 +72,7 @@
 ;; Download fonts from https://www.jetbrains.com/lp/mono/
 ;; For mac users copy font to 'ls ~/Library/Fonts'.
 ;; NOTE: emacs wil crash if fonts not in path.
-(setq doom-font (font-spec :family "JetBrains Mono" :size 15)
+(setq doom-font (font-spec :family "JetBrains Mono" :size 14)
       doom-big-font (font-spec :family "JetBrains Mono" :size 20))
 
 ;; PROJECTILE
@@ -89,7 +84,7 @@
 
 ;; COMPANY
 (after! company
-  (setq company-idle-delay 0.1
+  (setq company-idle-delay 0.2
         company-minimum-prefix-length 2
         company-tooltip-maximum-width 500)
   (add-hook! 'evil-normal-state-entry-hook #'company-abort))
