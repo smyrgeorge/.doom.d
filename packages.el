@@ -66,3 +66,12 @@
 (package! magit-delta
   :recipe (:host github :repo "dandavison/magit-delta"
            :files ("magit-delta.el")))
+
+;; yascroll :: Yet Another Scroll Bar Mode for GNU Emacs.
+;; https://github.com/emacsorphanage/yascroll
+(package! yascroll)
+
+;; kubernetes :: Emacs extension for controlling Kubernetes with limited permissions.
+;; https://github.com/abrochard/kubel
+(package! kubel)
+(package! kubel-evil)

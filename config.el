@@ -84,13 +84,13 @@
 
 ;; COMPANY
 (after! company
-  (setq company-idle-delay 0.2
-        company-minimum-prefix-length 2
+  (setq company-idle-delay 0.1
+        company-minimum-prefix-length 1
         company-tooltip-maximum-width 500)
   (add-hook! 'evil-normal-state-entry-hook #'company-abort))
 
 ;; LSP
-(setq lsp-signature-render-documentation nil)
+;; (setq lsp-signature-render-documentation nil)
 
 ;; FORMAT
 ;; Disable re-format with lsp. Use doom's format module (see init.el).
@@ -112,6 +112,22 @@
 (add-hook! 'rainbow-mode-hook
   (hl-line-mode (if rainbow-mode -1 +1)))
 
+;; YASCROLL
+(global-yascroll-bar-mode 1)
+
 ;; PYTHON
 ;; Set the anaconda home directory.
 (setq conda-anaconda-home "/usr/local/anaconda3/")
+
+;; TRAMP
+;; The following config tries to speed up tramp session over ssh.
+;; https://github.com/hlissner/doom-emacs/issues/3909
+(after! tramp
+  (setq tramp-inline-compress-start-size 1000)
+  (setq tramp-copy-size-limit 10000)
+  (setq vc-handled-backends '(Git))
+  (setq tramp-verbose 1)
+  (setq tramp-default-method "scp")
+  (setq tramp-use-ssh-controlmaster-options nil)
+  (setq projectile--mode-line "Projectile")
+  (setq tramp-verbose 1))
