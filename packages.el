@@ -60,12 +60,10 @@
  :recipe (:host github :repo "shime/emacs-livedown"
           :files ("livedown.el")))
 
-;; Emacs plugin for delta (ultimate diff tool).
+;; Emacs plugin for dlta (ultimate diff tool).
 ;; https://github.com/dandavison/magit-delta
 ;; brew install git-delta
-(package! magit-delta
-  :recipe (:host github :repo "dandavison/magit-delta"
-           :files ("magit-delta.el")))
+(package! magit-delta)
 
 ;; yascroll :: Yet Another Scroll Bar Mode for GNU Emacs.
 ;; https://github.com/emacsorphanage/yascroll

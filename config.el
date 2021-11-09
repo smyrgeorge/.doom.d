@@ -99,11 +99,16 @@
 ;; MAGIT
 ;; Enable delta diff by default.
 ;; NOTE: if delta is not install, emacs may brake (or magit).
-(add-hook 'magit-mode-hook (lambda () (magit-delta-mode +1)))
+(use-package magit-delta
+  :hook (magit-mode . magit-delta-mode))
 
-;; RSS
+;; ELFEED :: RSS
 (setq elfeed-feeds
-      '("https://this-week-in-rust.org/rss.xml"))
+      '("https://this-week-in-rust.org/rss.xml"
+        "https://blog.rust-lang.org/feed.xml"
+        "https://godotengine.org/rss.xml"
+        "https://sachachua.com/blog/category/emacs-news/feed"))
+;; (add-hook! 'elfeed-search-mode-hook 'elfeed-update)
 
 ;; RAINBOW-MODE
 ;; hl-line-mode overrides the color highlighting of rainbow-mode,
@@ -112,7 +117,7 @@
 (add-hook! 'rainbow-mode-hook
   (hl-line-mode (if rainbow-mode -1 +1)))
 
-;; YASCROLL
+;; YASCROLL :: Yet another scrollbar
 (global-yascroll-bar-mode 1)
 
 ;; PYTHON
