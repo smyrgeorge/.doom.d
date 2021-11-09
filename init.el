@@ -32,7 +32,6 @@
        doom-dashboard    ; a nifty splash screen for Emacs
        doom-quit         ; DOOM quit-message prompts when you quit Emacs
        (emoji
-        +ascii
         +unicode
         +github)         ; 🙂
        hl-todo           ; highlight TODO/FIXME/NOTE/DEPRECATED/HACK/REVIEW
@@ -70,11 +69,9 @@
        word-wrap         ; soft wrapping with language-aware indent
 
        :emacs
-       (dired
-        +ranger
-        +icons)          ; making dired pretty [functional]
+       (dired +ranger)   ; making dired pretty [functional]
        electric          ; smarter, keyword-based electric-indent
-       (ibuffer +icons)  ; interactive buffer management
+       ibuffer           ; interactive buffer management
        undo              ; persistent, smarter undo for your inevitable mistakes
        vc                ; version-control and Emacs, sitting in a tree
 
@@ -85,8 +82,7 @@
        vterm             ; the best terminal emulation in Emacs
 
        :checkers
-       (syntax
-        +childframe)     ; tasing you for every semicolon you forget
+       syntax            ; tasing you for every semicolon you forget
        (spell +flyspell) ; tasing you for misspelling mispelling
        ;;grammar           ; tasing grammar mistake every you make
 
