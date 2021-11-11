@@ -107,6 +107,7 @@
       '("https://this-week-in-rust.org/rss.xml"
         "https://blog.rust-lang.org/feed.xml"
         "https://godotengine.org/rss.xml"
+        "https://rust-analyzer.github.io/feed.xml"
         "https://sachachua.com/blog/category/emacs-news/feed"))
 ;; (add-hook! 'elfeed-search-mode-hook 'elfeed-update)
 
