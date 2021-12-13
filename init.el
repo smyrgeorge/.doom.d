@@ -88,6 +88,7 @@
 
        :tools
        ;;ansible
+       ;;biblio            ; Writes a PhD for you (citation needed)
        (debugger +lsp)   ; A (nigh-)universal debugger in Emacs
        ;;direnv
        (docker +lsp)
