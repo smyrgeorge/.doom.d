@@ -65,7 +65,7 @@
 ;; WINDOW
 (add-hook 'window-setup-hook #'toggle-frame-maximized)
 
-;; BUFFER
+;; EVIL
 (add-hook! 'after-save-hook #'evil-normal-state)
 
 ;; FONT-FACE
@@ -109,7 +109,6 @@
         "https://godotengine.org/rss.xml"
         "https://rust-analyzer.github.io/feed.xml"
         "https://sachachua.com/blog/category/emacs-news/feed"))
-;; (add-hook! 'elfeed-search-mode-hook 'elfeed-update)
 
 ;; RAINBOW-MODE
 ;; hl-line-mode overrides the color highlighting of rainbow-mode,
@@ -119,7 +118,7 @@
   (hl-line-mode (if rainbow-mode -1 +1)))
 
 ;; YASCROLL :: Yet another scrollbar
-(global-yascroll-bar-mode 1)
+;; (global-yascroll-bar-mode 1)
 
 ;; PYTHON
 ;; Set the anaconda home directory.
@@ -129,11 +128,19 @@
 ;; The following config tries to speed up tramp session over ssh.
 ;; https://github.com/hlissner/doom-emacs/issues/3909
 (after! tramp
-  (setq tramp-inline-compress-start-size 1000)
-  (setq tramp-copy-size-limit 10000)
-  (setq vc-handled-backends '(Git))
-  (setq tramp-verbose 1)
-  (setq tramp-default-method "scp")
-  (setq tramp-use-ssh-controlmaster-options nil)
-  (setq projectile--mode-line "Projectile")
-  (setq tramp-verbose 1))
+  (setq tramp-inline-compress-start-size 1000
+        tramp-copy-size-limit 10000
+        vc-handled-backends '(Git)
+        tramp-verbose 1
+        tramp-default-method "scp"
+        tramp-use-ssh-controlmaster-options nil
+        projectile--mode-line "Projectile"
+        tramp-verbose 1))
+
+;; UNIQUIFY
+;; Meaningful names for buffers with the same name.
+(after! uniquify
+  (setq uniquify-buffer-name-style 'post-forward-angle-brackets
+        uniquify-separator "/"
+        uniquify-after-kill-buffer-p t
+        uniquify-ignore-buffers-re "^\\*"))

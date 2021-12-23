@@ -49,6 +49,12 @@
 ;; ...Or *all* packages (NOT RECOMMENDED; will likely break things)
 ;(unpin! t)
 
+;; UNPIN ;;
+;; (unpin! lsp-mode lsp-ui consult-lsp)
+(unpin! rustic racer)
+(unpin! sbt-mode scala-mode lsp-metals)
+(unpin! yaml-mode)
+
 ;; CUSTOM PACKAGES ;;
 
 ;; Emacs plugin for livedown (live preview .md files in browser).
@@ -57,7 +63,7 @@
 ;; npm install -g livedown
 ;; NOTE: Emacs may crash if livedown is not present.
 (package! emacs-livedown
- :recipe (:host github :repo "shime/emacs-livedown"
+  :recipe (:host github :repo "shime/emacs-livedown"
           :files ("livedown.el")))
 
 ;; Emacs plugin for dlta (ultimate diff tool).
@@ -67,9 +73,12 @@
 
 ;; yascroll :: Yet Another Scroll Bar Mode for GNU Emacs.
 ;; https://github.com/emacsorphanage/yascroll
-(package! yascroll)
+;; (package! yascroll)
 
-;; kubernetes :: Emacs extension for controlling Kubernetes with limited permissions.
+;; kubernetes :: Emacs extension for controlling Kubernetes.
 ;; https://github.com/abrochard/kubel
-(package! kubel)
-(package! kubel-evil)
+;; https://github.com/kubernetes-el/kubernetes-el
+;; (package! kubel)
+;; (package! kubel-evil)
+;; (package! kubernetes)
+;; (package! kubernetes-evil)
