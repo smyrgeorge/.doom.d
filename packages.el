@@ -50,7 +50,7 @@
 ;(unpin! t)
 
 ;; UNPIN ;;
-;; (unpin! lsp-mode lsp-ui consult-lsp)
+(unpin! lsp-mode lsp-ui consult-lsp)
 (unpin! rustic racer)
 (unpin! sbt-mode scala-mode lsp-metals)
 (unpin! yaml-mode)
