@@ -3,8 +3,16 @@ set -euo pipefail
 
 # Install emacs from emacs-plus formule.
 brew tap d12frosted/emacs-plus
-# NOTE: the following line uses native compilation (will built from sources).
+
+# VERSION 28
 brew install emacs-plus@28 --with-xwidgets --with-modern-doom3-icon --with-native-comp
+
+# VERSION 29
+brew install emacs-plus@29 --with-xwidgets --with-modern-doom3-icon --with-native-comp
+
+# If you wish to re-install, please uninstall first.
+brew uninstall emacs-plus@28
+brew uninstall emacs-plus@29
 
 # NOTE: alternatively try to build from:
 # https://github.com/jimeh/build-emacs-for-macos
