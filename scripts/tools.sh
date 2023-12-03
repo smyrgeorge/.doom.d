@@ -9,8 +9,5 @@ brew install tex-live-utility
 # other tools
 echo -e "\nInstalling other tools:"
 brew install aspell bat curl editorconfig exa git-delta jq
-brew install inetutils git vim qemu ripgrep wget k9s lens
+brew install inetutils git vim qemu ripgrep wget k9s
 
-# amethys (tilling window manager)
-echo -e "\nInstalling Amethyst:"
-brew install amethyst
